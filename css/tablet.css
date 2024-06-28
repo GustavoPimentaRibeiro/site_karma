@@ -1,0 +1,12 @@
+@media only screen and (max-width: 768px) {
+  body {
+    margin: 36px 24px;
+  }
+
+  /* ############# Cabeçalho ############### */
+  section#cabecalho > header > nav > ul {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+}
