@@ -1,0 +1,208 @@
+:root {
+  --fonte-principal: "Playwrite NZ", cursive;
+  --cor-principal: #000000ea;
+  --cor-secundaria: #f9c4b6;
+  --cor-tercearia: #ffffff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+
+  font-family: var(--fonte-principal);
+  font-optical-sizing: auto;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+
+  background-color: var(--cor-principal);
+  color: var(--cor-tercearia);
+
+  margin: 36px 160px;
+}
+
+/* ############# Cabeçalho ############### */
+
+section#cabecalho {
+  width: 100%;
+
+  display: flex;
+
+  padding-bottom: 32px;
+  border-bottom: var(--cor-tercearia) 1px solid;
+  border-radius: 10%;
+}
+
+section#cabecalho > header {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 0 24px;
+}
+
+section#cabecalho > header > h1 {
+  font-size: 42px;
+  color: var(--cor-secundaria);
+}
+
+section#cabecalho > header > nav > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+}
+
+section#cabecalho > header > nav > ul > li {
+  list-style: none;
+
+  color: var(--cor-secundaria);
+  cursor: pointer;
+}
+
+section#cabecalho > header > nav > ul > li:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--cor-secundaria);
+  transition: width 0.5s ease;
+}
+
+section#cabecalho > header > nav > ul > li:hover:after {
+  width: 100%;
+}
+
+/* ############# Principal ############### */
+
+section#principal {
+  display: flex;
+}
+
+section#principal > main {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+section#principal > main > h2 {
+  display: inline-block;
+  width: auto;
+
+  font-size: 32px;
+
+  padding-bottom: 5px;
+  padding-left: 25px;
+
+  color: var(--cor-secundaria);
+}
+
+section#principal > main > div#biografia {
+  display: flex;
+}
+
+section#principal > main > div#biografia > p {
+  width: 70%;
+
+  padding-left: 24px;
+
+  font-weight: 100;
+}
+
+section#principal > main > div#biografia > div {
+  display: flex;
+  justify-content: center;
+
+  width: 30%;
+}
+
+section#principal > main > div#biografia > div > img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+section#principal > main > div#artes {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+section#principal > main > div#artes > h2 {
+  font-size: 32px;
+  text-align: center;
+  color: var(--cor-secundaria);
+}
+
+section#principal > main > div#artes > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+section#principal > main > div#artes > div > div.card {
+  max-width: 340px;
+  height: 320px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  padding: 5px;
+  border: var(--cor-tercearia) 1px solid;
+  border-radius: 10px;
+  box-shadow: -3px 2px 10px var(--cor-secundaria);
+}
+
+section#principal > main > div#artes > div > div.card > img.card_imagem {
+  width: 250px;
+  height: 250px;
+
+  display: flex;
+  justify-content: flex-start;
+
+  border: var(--cor-secundaria) 1px solid;
+  border-radius: 10px;
+}
+
+section#principal > main > div#contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  font-size: 32px;
+  text-align: center;
+
+  color: var(--cor-secundaria);
+}
+
+section#principal > main > div#contato > a {
+  cursor: pointer;
+}
+
+section#principal > main > div#contato > a > img {
+  width: 50px;
+  height: 50px;
+
+  border: var(--cor-secundaria) 2px solid;
+  border-radius: 20px;
+}
+
+/* ############# Rodapé ############### */
+
+section#rodape {
+  font-size: 24px;
+  text-align: center;
+
+  padding-top: 32px;
+  border-top: var(--cor-tercearia) 1px solid;
+  border-radius: 10%;
+  color: var(--cor-secundaria);
+}
