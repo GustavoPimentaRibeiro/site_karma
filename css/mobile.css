@@ -13,7 +13,7 @@
   section#cabecalho > header > nav > ul {
     display: flex;
     flex-direction: row;
-    gap: 64px;
+    gap: 24px;
   }
 
   /* ############# Principal ############### */
@@ -21,9 +21,34 @@
     text-align: center;
   }
 
+  /* ##### Biografia ##### */
+
   section#principal > main > div#biografia {
     flex-direction: column-reverse;
     align-items: center;
     gap: 32px;
+  }
+
+  section#principal > main > div#biografia > p {
+    padding-left: 12px;
+  }
+
+  /* ##### Comissão ##### */
+
+  section#principal > main > div#comissao > div#comissao_imagem {
+    width: 90%;
+  }
+
+  /* ##### Artes ##### */
+
+  section#principal > main > div#artes > div > div.card {
+    max-width: 340px;
+    height: 320px;
+    gap: 10px;
+  }
+
+  section#principal > main > div#artes > div > div.card > img.card_imagem {
+    width: 280px;
+    height: 280px;
   }
 }

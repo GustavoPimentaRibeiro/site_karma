@@ -9,4 +9,12 @@
     flex-direction: row;
     gap: 24px;
   }
+
+  /* ############# Principal ############### */
+
+  /* ##### Comissão ##### */
+
+  section#principal > main > div#comissao > div#comissao_imagem {
+    width: 85%;
+  }
 }
